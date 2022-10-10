@@ -1,0 +1,14 @@
+<ejs-grid #grid [dataSource]='data' allowPaging='true' [pageSettings]='pageSettings' [height]='500'
+    [editSettings]='editSettings' [toolbar]='toolbar' (actionComplete)='save($event)'>
+    <e-columns>
+        <e-column field='title' headerText='คำนำหน้าชื่อ' editType='dropdownedit' [edit]="titleParam"></e-column>
+        <e-column field='firstName' headerText='ชื่อ'></e-column>
+        <e-column field='lastName' headerText='นามสกุล'></e-column>
+        <e-column field='telephone' headerText='เบอร์โทร'></e-column>
+        <e-column field='dob' headerText='วันเกิด' editType='datepickeredit' format="yMd" type="date"></e-column>
+        <e-column field='gender' headerText='เพศ' editType='dropdownedit' [edit]="genderParam"></e-column>
+        <e-column field='address' headerText='ที่อยู่'></e-column>
+        <e-column field='email' headerText='e-mail'></e-column>
+        <e-column field='salary' headerText='เงินเดือน' editType='numericedit'></e-column>
+    </e-columns>
+</ejs-grid>

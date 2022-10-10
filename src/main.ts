@@ -1,0 +1,15 @@
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
+import { registerLicense } from '@syncfusion/ej2-base';
+
+registerLicense('Mgo+DSMBaFt/QHNqVVhkW1pFdEBBXHxAd1p/VWJYdVt5flBPcDwsT3RfQF9iSX5adEZjWn1dc31WQg==;Mgo+DSMBPh8sVXJ0S0V+XE9AcVRDX3xKf0x/TGpQb19xflBPallYVBYiSV9jS3xSdkVqW3xec3ZWQmBaWQ==;ORg4AjUWIQA/Gnt2VVhjQlFaclhJXGFWfVJpTGpQdk5xdV9DaVZUTWY/P1ZhSXxRd0VjUH1dcHdXRWReVEw=;NzM1MzA2QDMyMzAyZTMzMmUzMGxtMzJ5SUFQWDVUWTBZYzJJOVFoZStIZ3RwK2gzZlNtK3V5dWRkS25UM0E9;NzM1MzA3QDMyMzAyZTMzMmUzMFEzaTFadGZ3eVFubUFZN2dhYXFqcXYxdnlRS1FSc29va2JVa2IzeFN2QU09;NRAiBiAaIQQuGjN/V0Z+X09EaFtFVmJLYVB3WmpQdldgdVRMZVVbQX9PIiBoS35RdERjWXZcc3RWRGNYWEx1;NzM1MzA5QDMyMzAyZTMzMmUzMFJnaGlBNEdiM1VNV0o0b0xCTksrM21rc1VrM0l4dXpZR05DK0lLNWN6U3c9;NzM1MzEwQDMyMzAyZTMzMmUzMFcyb2REVWpyVlVVVXovU3RzWWZVRHlHZ21uZmFQdldTU3NnQTVGLzJ1SkU9;Mgo+DSMBMAY9C3t2VVhjQlFaclhJXGFWfVJpTGpQdk5xdV9DaVZUTWY/P1ZhSXxRd0VjUH1dcHdXRWVbWEc=;NzM1MzEyQDMyMzAyZTMzMmUzMEJTc01sSjdMaDJkZUlyVDNQZHdZczFNZ3VkejE4SjRBdFIyV0xuR0h3ekU9;NzM1MzEzQDMyMzAyZTMzMmUzME9yQUZOcEVJbkRPTlQ5NkxsbVovQnNmVW1jL3FxRXo1Ulc2eEtiYWFKNk09;NzM1MzE0QDMyMzAyZTMzMmUzMFJnaGlBNEdiM1VNV0o0b0xCTksrM21rc1VrM0l4dXpZR05DK0lLNWN6U3c9');
+
+if (environment.production) {
+  enableProdMode();
+}
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
